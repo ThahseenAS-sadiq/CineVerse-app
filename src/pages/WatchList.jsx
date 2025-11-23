@@ -20,10 +20,11 @@ const WatchList = () => {
     <div className="p-4 pt-16">
       <input type="text"
        placeholder='Search movies...' 
-       className="p-2 w-3/4 md:w-1/2 border rounded border-gray-700 bg-gray-900 bg-opacity-60 backdrop-blur-md text-white fixed top-20 left-1/2 transform -translate-x-1/2 z-10"
+       className="p-4 w-3/4 md:w-1/2 bg-gray-900 bg-opacity-60 backdrop-blur-md text-xl
+         text-white fixed top-25 left-1/2 transform -translate-x-1/2 z-10 border-2 rounded border-red-700 shadow-[0_0_10px_rgba(255,0,0,0.4)] transition"
        onChange={(e) => setSearch(e.target.value)} />
 
-       <div className="mt-8 flex justify-center">
+       <div className="mt-40 flex justify-center">
         <GenreFilter genreList={genreList} setSelectedGenre={setSelectedGenre} />
        </div>
 
